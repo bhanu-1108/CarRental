@@ -566,7 +566,7 @@ body {
   .hero {
     height: auto;
     padding: 30px 20px;
-    text-align: center;
+  
   }
 
   #p, #a {
@@ -606,6 +606,7 @@ body {
   .features2 {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
 }
 
@@ -617,6 +618,7 @@ body {
   #p, #a {
     font-size: 28px;
   }
+
 
   .bookfleet h2 {
     font-size: 20px;
@@ -659,6 +661,14 @@ body {
   gap: 20px;
   padding: 40px;
   flex-wrap: wrap;
+}
+.features2,.features{
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .testimonial-card {

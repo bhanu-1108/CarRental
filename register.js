@@ -48,7 +48,7 @@ btn.addEventListener("click",()=>{
     return;
   }
 
-alert("form submitted sucessfully")
+alert("Registration Done Sucessfully")
 window.location.href = "signin.html"; // Redirect to main page
 
 })

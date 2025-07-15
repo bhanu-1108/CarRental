@@ -396,6 +396,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
+  
 }
 
 .card-logo {
@@ -487,7 +488,6 @@ body {
 #booking-content strong {
   color: #333;
 }
-
 @media (max-width: 1024px) {
   .search-box {
     width: 90%;
@@ -534,7 +534,7 @@ body {
   .hero {
     height: auto;
     padding: 30px 20px;
-    text-align: center;
+  
   }
 
   #p, #a {
@@ -564,6 +564,7 @@ body {
     flex-direction: column;
     padding: 20px;
     gap: 30px;
+    width: 100%;
   }
 
   .card2, .card1 {
@@ -574,6 +575,7 @@ body {
   .features2 {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
 }
 
@@ -586,13 +588,13 @@ body {
     font-size: 28px;
   }
 
+
   .bookfleet h2 {
     font-size: 20px;
   }
 
   .bookfleet p {
     font-size: 14px;
-    
   }
 
   .search-btn {
@@ -604,6 +606,7 @@ body {
     min-width: 100%;
   }
 }
+
 .footer-bottom {
   text-align: center;
   border-top: transparent;
@@ -620,8 +623,83 @@ body {
     border: none;
     background-color: rgb(99, 98, 98);
   }
-.card2 p{
-    text-decoration: none;
-    font-size: 16px;
-    color: #9ca3af;
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.features2,.features{
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.stars {
+  color: #fbc02d;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stars span {
+  color: #333;
+  margin-left: 5px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-info strong {
+  font-size: 14px;
+  color: #000;
+}
+
+.user-info span {
+  font-size: 12px;
+  color: #777;
+}
+.footer-container {
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.footer-container > * {
+  max-width: 100%;
+  box-sizing: border-box;
 }
