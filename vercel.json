@@ -1,16 +1,15 @@
 {
   "rewrites": [
     { "source": "/aboutus", "destination": "/aboutus.html" },
+    { "source": "/main", "destination": "/index.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/payment", "destination": "/payment.html" },
+    { "source": "/booking", "destination": "/booking.html" },
+    { "source": "/mybooking", "destination": "/mybooking.html" },
+    { "source": "/searchcars", "destination": "/searchcars.html" },
     { "source": "/contactus", "destination": "/contactus.html" },
-     { "source": "/main", "destination": "/index.html" },
-      { "source": "/mybookings", "destination": "/mybookings.html" },
-       { "source": "/fleet", "destination": "/fleet.html" },
-        { "source": "/payment", "destination": "/payment.html" },
-        { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
-        { "source": "/register", "destination": "/register.html" },
-        { "source": "/signin", "destination": "/signin.html" },
-        { "source": "/booking", "destination": "/booking.html" } 
-        
-
+    { "source": "/signin", "destination": "/signin.html" },
+    { "source": "/register", "destination": "/register.html" },
+    { "source": "/fleet", "destination": "/fleet.html" }
   ]
 }
