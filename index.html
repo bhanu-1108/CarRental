@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar" id="nav-items">
+            <div class="name-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span id="car">Car</span></h2>
+            </div>
+              <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+            
+            <div class="items">
+                <a href="#">Home</a>
+                <a href="fleet.html">Cars</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+               <a id="mybookings" href="mybookings.html">My Bookings</a>
+
+            </div>
+            <div class="signin" id="user-info">
+              <a id="a1" href="signin.html">Sign In</a>
+                <a href="register.html" id="reg">Register</a>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="title">
+            <div class="big">
+                <h1 id="p">Premium Cars at</h1>
+                <h1 id="a">Affordable Prices</h1>
+            </div>
+            <div class="small">
+                <p>Experience the freedom of the road with our wide selection of vehicles for any</p>
+                <p>occasion. No hidden fees, guaranteed.</p>
+            </div>
+        </div>
+      <form  class="search-box" id="searchForm">
+  <div class="field">
+    <p>Pick-up Location</p>
+    <div class="input-icon">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" id="pickupLocation" placeholder="City, Airport, etc">
+    </div>
+  </div>
+  <div class="field">
+    <p>Drop-off Location</p>
+    <div class="input-icon">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="Same as pick-up">
+    </div>
+  </div>
+  <div class="field">
+    <p>Pick-up Date</p>
+    <div class="input-icon">
+      <i class="fa-solid fa-calendar-days"></i>
+      <input type="date" id="pickupDate" placeholder="dd-mm-yyyy">
+    </div>
+    
+  </div>
+  <div class="field">
+    <p>Pick-up Time</p>
+    <div class="input-icon">
+      <i class="fa-solid fa-calendar-days"></i>
+      <input type="time" id="pickupTime" placeholder="dd-mm-yyyy">
+    </div>
+    
+  </div>
+  <div class="field">
+    <p>Return Date </p>
+    <div class="input-icon">
+      <i class="fa-solid fa-calendar-days"></i>
+      <input type="date"  id="returnDate" placeholder="dd-mm-yyyy">
+    </div>
+  </div>
+  <div class="field">
+    <p>Return Time</p>
+    <div class="input-icon">
+      <i class="fa-solid fa-calendar-days"></i>
+      <input type="time" id="returnTime" placeholder="dd-mm-yyyy">
+    </div>
+    
+  </div>
+  <button  type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass">
+
+  </i> Search Cars</button>
+</div>
+</div>
+</form>
+       <div class="why">
+  <div class="quick">
+    <h1>Why Choose <span>QuickCar</span></h1>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="icon-circle">
+        <i class="fas fa-headphones"></i>
+      </div>
+      <h2>24/7 Customer Support</h2>
+      <p>Our dedicated team is always available to assist you with any questions or concerns.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon-circle">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <h2>Quick & Easy Booking</h2>
+      <p>Book your ideal car in minutes with our streamlined reservation process.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon-circle">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h2>No Hidden Charges</h2>
+      <p>Transparent pricing with all fees clearly displayed before you confirm your booking.</p>
+    </div>
+  </div>
+</div>
+<div class="howitWorks">
+  <div class="quick">
+    <h1>How it works</h1>
+  </div>
+
+  <div class="features2">
+    <div class="feature-card2">
+      <div class="icon-circle2">
+      <i class="fa-solid fa-1"></i>
+      </div>
+      <h2>Choose Your Car <span id="rightarrow1"><i class="fa-solid fa-arrow-right"></i></span></h2>
+      <p>Browse our extensive fleet and select the perfect vehicle for your needs.</p>
+    </div>
+
+    <div class="feature-card2">
+      <div class="icon-circle2">
+        <i class="fa-solid fa-2"></i>
+      </div>
+      <h2>Book & Pay Online <span id="rightarrow1"><i class="fa-solid fa-arrow-right"></i></span></h2>
+      <p>Secure your reservation with our easy payment system and receive instant confirmation.</p>
+    </div>
+
+    <div class="feature-card2">
+      <div class="icon-circle2">
+        <i class="fa-solid fa-3"></i>
+      </div>
+      <h2>Enjoy Your Ride <span id="rightarrow1"><i class="fa-solid fa-arrow-right"></i></span></h2>
+      <p>Pick up your car at the designated location and start your journey with peace of mind.</p>
+    </div>
+  </div>
+</div>
+<div class="customers">
+  <div class="quick">
+    <h1>What Our Customers Say</h1>
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★ <span>5.0</span></div>
+      <p>"The booking process was incredibly smooth, and the car was in perfect condition. Will definitely use QuickCar again for my next trip!"</p>
+      <div class="user-info">
+        <img src="photos/priya gehlot.jpg" alt="User Photo">
+        <div>
+          <strong>Priya Gehlot</strong><br>
+          <span>Jaipur</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★ <span>5.0</span></div>
+      <p>"Customer service was exceptional! When my plans changed, they were very accommodating with modifying my reservation. Highly recommend!"</p>
+      <div class="user-info">
+        <img src="photos/ramkapoor.avif" alt="User Photo">
+        <div>
+          <strong>Ram Kapoor</strong><br>
+          <span>Mumbai</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★☆ <span>4.5</span></div>
+      <p>"Great selection of vehicles and competitive prices. The pick-up and drop-off process was quick and efficient. Will be my go-to car rental service."</p>
+      <div class="user-info">
+        <img src="photos/shobit parmar.webp" alt="User Photo">
+        <div>
+          <strong>Shobit Parmar</strong><br>
+          <span>Indore</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bookfleet">
+  
+    <h2>Ready to Hit the Road?</h2>
+    <p>Experience the freedom of the open road with our premium vehicles and exceptional service.</p>
+    
+    <a href="fleet.html"> Browse our fleet</a>
+</div>
+<footer>
+  <div class="footer-container">
+    <div class="card1">
+      <div class="card-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span style="color: #36a7f6;">Car</span></h2>
+            </div>
+          <div class="pcar">
+            <p>Premium car rental services with transparent pricing and exceptional customer support.</p>
+          </div>
+          <div class="social-media">
+            <a href="#3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#3"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#3"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""></a>
+            
+           
+           
+            
+          </div>
+        
+
+    </div>
+    <div class="card2">
+      <h2>Quick Links</h2>
+      <div class="anchor-links">
+        <a href="index.html">Home</a>
+      <a href="fleet.html">Cars</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    
+
+      </div>
+      
+
+    </div>
+    <div class="card2">
+      <h2>Support</h2>
+      <div class="anchor-links">
+        <a href="contactus.html">Help Center</a>
+      <a href="termsofservice.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+     
+      
+</div>
+      </div>
+        <div class="card2">
+      <h2>Contact Info</h2>
+      <div class="anchor-links">
+        <p><i class="fa-solid fa-phone"></i>   +91 7300368554</p>
+      <p><i class="fa-solid fa-message"></i>   support@quickcar.com</p>
+      <p><i class="fa-solid fa-location-dot"> </i>   34 Wifi Street, Banglore, Karnataka </p>
+      <p>530068</p>
+      
+</div>
+      </div>
+  </div>
+     <div class="footer-bottom">
+    <hr class="grey-line">
+    <br>
+  <p>© 2024 QuickCar. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  
+  const user = JSON.parse(localStorage.getItem("User"));
+const isLoggedIn = localStorage.getItem("LoggedIn") === "true";
+
+if (user && user.username && isLoggedIn) {
+  const userInfoDiv = document.getElementById("user-info");
+
+  userInfoDiv.innerHTML = `
+    <span style="color: black; font-weight: bold;">Welcome, ${user.username} <i class="fa-solid fa-face-smile"></i></span>
+    <a href="#" id="logout" style=" color: #FFFFFF;
+    background-color: #007BFF;
+    padding: 5px 10px;
+    border-radius: 10%;">Logout</a>
+  `;
+
+  document.getElementById("logout").addEventListener("click", function () {
+    localStorage.removeItem("LoggedIn");
+    location.reload();
+  });
+}
+
+
+
+  ///
+  
+  document.getElementById("searchForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+    const isLoggedIn = localStorage.getItem("LoggedIn") === "true";
+  if (!isLoggedIn) {
+    alert("Please sign in to search for cars.");
+    window.location.href = "signin.html";
+    return;
+  }
+
+  const pickupLocation = document.getElementById("pickupLocation").value.trim();
+  const pickupDate = document.getElementById("pickupDate").value.trim();
+  const pickupTime = document.getElementById("pickupTime").value.trim();
+  const returnDate = document.getElementById("returnDate").value.trim();
+  const returnTime = document.getElementById("returnTime").value.trim();
+  if (!pickupLocation || !pickupDate || !pickupTime || !returnDate || !returnTime) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  // Check if return date is earlier than pickup date
+  if (new Date(returnDate) < new Date(pickupDate)) {
+    alert("Return date cannot be earlier than pickup date.");
+    return;
+  }
+ 
+
+  if (pickupLocation && pickupDate && pickupTime && returnDate && returnTime) {
+    localStorage.setItem("data", JSON.stringify({
+      pickupLocation,
+      pickupDate,
+      pickupTime,
+      returnDate,
+      returnTime
+    }));
+    window.location.href = "searchcars.html";
+  } else {
+    alert("Please fill in all fields.");
+  }
+});
+// hamburger menu 
+function toggleMenu() {
+    var nav = document.getElementById("nav-items");
+    nav.classList.toggle("active");
+}
+
+</script>
+</body>
+</html>

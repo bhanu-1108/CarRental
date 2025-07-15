@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Cars</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f0f0f0; }
+    .cars-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .car-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .car-card img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
+    .car-card h3 { margin: 10px 0 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Cars Available in <span id="locationName"></span></h1>
+  <div class="cars-container" id="carsContainer"></div>
+
+  <script>
+  // Get location from URL
+  const params = new URLSearchParams(window.location.search);
+  const pickupLocationRaw = params.get("pickup");
+
+  if (!pickupLocationRaw) {
+    document.getElementById('carsContainer').innerHTML = "<p>Please enter a pickup location from the homepage.</p>";
+    document.getElementById('locationName').textContent = "[Not Provided]";
+  } else {
+    const pickupLocation = pickupLocationRaw.toLowerCase();
+    document.getElementById("locationName").textContent =
+      pickupLocation.charAt(0).toUpperCase() + pickupLocation.slice(1);
+
+    fetch('cars.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('carsContainer');
+        const filteredCars = data.filter(car => car.location.toLowerCase() === pickupLocation);
+
+        if (filteredCars.length === 0) {
+          container.innerHTML = `<p>No cars found in "${pickupLocationRaw}".</p>`;
+        } else {
+          filteredCars.forEach(car => {
+            const carCard = document.createElement('div');
+            carCard.className = 'car-card';
+            carCard.innerHTML = `
+              <img src="${car.image}" alt="${car.name}" />
+              <h3>${car.name}</h3>
+              <p>Type: ${car.type}</p>
+              <p>Seats: ${car.seats}</p>
+              <p><strong>$${car.pricePerDay}</strong> per day</p>
+            `;
+            container.appendChild(carCard);
+          });
+        }
+      })
+      .catch(err => {
+        document.getElementById('carsContainer').innerHTML = `<p>Error loading cars data.</p>`;
+        console.error(err);
+      });
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Step 1: Form -->
+<form id="paymentForm">
+  <input type="text" id="name" required />
+  <input type="email" id="email" required />
+  <button type="submit">Proceed to Payment</button>
+</form>
+
+<!-- Step 2: QR Code -->
+<div id="qrSection" style="display:none;">
+  <p>Scan this QR Code</p>
+  <img src="unnamed.png" />
+  <input type="text" id="txnCode" placeholder="Enter Transaction Code" />
+  <button id="verifyCode">Verify Payment</button>
+</div>
+
+<!-- Step 3: Completion -->
+<div id="completeSection" style="display:none;">
+  <h2>Payment Completed Successfully!</h2>
+</div>
+
+
+<script>
+    document.getElementById("paymentForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const email = document.getElementById("email").value;
+  if (!email) {
+    alert("Please enter your email");
+    return;
+  }
+  document.getElementById("paymentForm").style.display = "none";
+  document.getElementById("qrSection").style.display = "block";
+});
+
+document.getElementById("verifyCode").addEventListener("click", function () {
+  const code = document.getElementById("txnCode").value;
+  if (!code) {
+    alert("Please enter transaction code");
+    return;
+  }
+  // Here you might check the code against a backend
+  document.getElementById("qrSection").style.display = "none";
+  document.getElementById("completeSection").style.display = "block";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+{
+  "cars": [
+    {
+      "car_name": "Mahindra Thar",
+      "city": "Jaipur",
+      "seats": 4,
+      "bags": 2,
+      "fuel_type": "Diesel",
+      "price_per_hour": 236,
+      "owner_name":"Jai Taneja",
+      "owner_address":"Flat No. 204,Sunrise Apartments,Jagatpura,Jaipur,302017",
+      "transmisson": "Manual",
+      "photos": [
+  "photos/thar1.jpeg",
+  "photos/thar2.jpeg",
+  "photos/thar3.jpeg"
+],
+  "image_url":"photos/thar.jpeg"
+    },
+     {
+  "car_name": "Maruti Suzuki Swift",
+  "city": "Jaipur",
+  "seats": 5,
+  "owner_name":"Raj Kumar",
+  "bags": 2,
+  "owner_address":"Plot No. 88, Shyam Nagar, Sodala, Jaipur,302019",
+  "fuel_type": "Petrol",
+  "price_per_hour": 94,
+  "transmisson": "Manual",
+  "photos": [
+  "photos/swift2.jpg",
+  "photos/swift3.jpg",
+  "photos/swift4.jpg",
+"photos/swift5.jpeg","photos/swift6.jpg"],
+  "image_url":"photos/swift.jpeg"},
+  {
+  "car_name": "Maruti Suzuki Fronx",
+  "city": "Jaipur",
+  "seats": 5,
+  "bags": 3,
+  "owner_address":"Flat No. 302, Krishna Enclave, Jagatpura, Jaipur 302025",
+  "owner_name":"Happy Singh",
+  "fuel_type": "Petrol",
+  "price_per_hour": 102,
+  "transmisson": "Manual",
+  "photos": [
+  "photos/fronx1.jpeg",
+  "photos/fronx2.jpg",
+  "photos/fronx3.jpg",
+"photos/fronx4.jpg"],
+  "image_url":"photos/fronx.jpg" 
+},
+{
+  "car_name": "Mahindra Scorpio-N",
+  "city": "Jaipur",
+  "seats": 7,
+  "bags": 4,
+  "owner_address":"H.No. 19, Gopalpura Bypass,Tonk Road,Jaipur,302018",
+  "owner_name":"Rajesh Sain",
+  "fuel_type": "Diesel",
+  "price_per_hour": 341,
+"transmisson": "Manual",
+"photos": [
+  "photos/scorpio2.jpg",
+  "photos/scorpio3.jpg",
+  "photos/scorpio4.jpg",
+"photos/scropio5.jpg",
+"photos/scorpio6.jpg"],
+  "image_url": "photos/scorpio.jpeg"
+},
+{
+  "car_name": "Kia Carens 2024",
+  "city": "Jaipur",
+  "seats": 6,
+  "bags": 3,
+  "owner_address":"D-12, Malviya Nagar Industrial Area,Jaipur,302017",
+  "owner_name":"Rohit Kumar",
+  "fuel_type": "Diesel",
+  "price_per_hour": 171,
+"transmisson": "Manual",
+"photos": [
+  "photos/carens2.jpeg",
+  "photos/carens3.jpeg",
+"photos/carens6.jpeg"],
+  "image_url": "photos/carens.jpeg"
+},
+{
+  "car_name": "Maruti Suzuki Celerio 2024",
+  "city": "Jaipur",
+  "seats": 5,
+  "bags": 2,
+  "owner_address":"Plot No. 8, C-Scheme, Ashok Nagar,Jaipur,302001",
+  "owner_name":"Govind Sahu",
+  "fuel_type": "Petrol",
+  "price_per_hour": 58,
+"transmisson": "Manual",
+"photos": [
+  "photos/celerio2.jpeg",
+  "photos/celerio2.jpeg",
+  "photos/celerio3.jpg"],
+  "image_url": "photos/celerio.jpeg"
+},
+{
+  "car_name": "Hyundai I20 2023",
+  "city": "Jaipur",
+  "seats": 5,
+  "bags": 2,
+  "owner_address":"Shop No. 5, Johari Bazaar,Jaipur,302003",
+  "owner_name":"Kishan Singh",
+  "fuel_type": "Petrol",
+  "price_per_hour": 137,
+"transmisson": "Automatic",
+"photos": [
+  "photos/i202023.jpg",
+  "photos/i2020232.jpg",
+  "photos/i2020233.jpg",
+"photos/i2020234.jpg",
+"photos/i2020235.jpg"],
+  "image_url":"photos/i202023.jpg"
+},
+{
+  "car_name": "Mahindra Bolero Neo 2022",
+  "city": "Jaipur",
+  "seats": 7,
+  "bags": 4,
+  "owner_address":"32/84, Patel Marg, Mansarovar,Jaipur,302020",
+  "owner_name":"Govind Sahu",
+  "fuel_type": "Diesel",
+  "price_per_hour": 112,
+"transmisson": "Manual",
+"photos": [
+  "photos/boloro2.jpeg",
+  "photos/boloro3.jpg",
+  "photos/boloro4.jpg"],
+  "image_url": "photos/boloro.jpeg"
+},
+
+    {
+      "car_name": "Tata Nexon",
+      "city": "Udaipur",
+      "seats": 5,
+      "bags": 3,
+      "owner_name":"Gaurav Kapoor",
+      "fuel_type": "Diesel",
+      "owner_address":"",
+      "price_per_hour": 220,
+      "photos": [
+  "photos/nexon1.jpg",
+  "photos/nexon2.jpeg",
+  "photos/nexon3.jpg",
+"photos/nexon4.jpg","nexon5.jpeg"],
+      "image_url":"photos/Tata_Nexon_Diesel_MT_22_d3246c75bd (1).jpeg",
+       "transmisson": "Manual"
+    },
+    {
+      "car_name": "Hyundai i10 Neos",
+      "city": "Udaipur",
+      "seats": 5,
+      "bags": 3,
+      
+      "owner_name":"Roy Sarkar",
+      "fuel_type": "Petrol",
+      "price_per_hour": 110,
+       "photos": [
+  "photos/i10neos2.jpeg",
+  "photos/i10neos3jpeg",
+  "photos/i10neos4jpeg",
+"photos/i10neos4jpeg","photos/i10neos5.jpeg"],
+      "owner_address":"B‑14, Bhuwana Industrial Area,Udaipur,313001",
+       "transmisson": "Automatic",
+       "image_url":"photos/i10neos.jpeg"
+    },
+    {
+      "car_name": "Tata Altroz 2025",
+      "city": "Udaipur",
+      "owner_name":"Harsh Teja",
+      "seats": 5,
+      "bags": 2,
+      "owner_address":"House No.101,Shobhagpura Road,Udaipur,313002",
+      "fuel_type": "CNG",
+      "price_per_hour": 312,
+       "transmisson": "Manual",
+       "image_url":"photos/altroz.jpg",
+       "photos": [
+  "photos/altroz2.jpg",
+  "photos/altroz3.jpeg",
+  "photos/altroz4.jpg",
+"photos/altroz5.jpg"]
+    },
+     {
+      "car_name": "Maruti Suzuki Baleno 2024",
+      "city": "Mumbai",
+      "owner_name":"Shubham Sharma",
+      "seats": 5,
+      "bags": 2,
+      "owner_address":"Shop No. 5, Ground Floor,Shiva Plaza,Juhu Tara Road,Mumbai,400049",
+      "fuel_type": "Petrol",
+      "price_per_hour": 77,
+       "photos": [
+  "photos/baleno2.jpeg",
+  "photos/baleno3.jpg",
+  "photos/baleno4.jpeg",
+"photos/baleno5.jpg"],
+      "image_url":"photos/baleno.jpg",
+      
+       "transmisson": "Manual"
+    },
+     {
+      "car_name": "Kia Seltos",
+      "city": "Mumbai",
+      "owner_name":"Ram Verma",
+      "seats": 7,
+      "bags": 3,
+      "owner_address":"Plot No. 55, CES Road,Near Shivaji Park,DadarWest,Mumbai,400028",
+      "fuel_type": "Petrol",
+      "price_per_hour": 312,
+       "transmisson": "Automatic",
+       "image_url":"photos/seltos.jpeg",
+       "photos": [
+  "photos/seltos2.jpeg",
+  "photos/seltos3.jpg",
+  "photos/seltos4.jpg",
+"photos/seltos5.jpg"]
+    },
+     {
+      "car_name":"Tata Tiago 2023",
+      "city": "Indore",
+      "owner_name":"Shekar Kumawat",
+      "seats": 5,
+      "bags": 2,
+      "owner_address":"House No. 45,Scheme No. 54,Indore,452001",
+      "fuel_type": "Petrol",
+      "price_per_hour": 312,
+       "transmisson": "Manual",
+       "image_url":"photos/tiago.jpeg",
+       "photos": [
+  "photos/tiago2.jpeg",
+  "photos/tiago3.jpeg",
+  "photos/tiago4.jpg"]
+
+
+      },
+
+   {
+  "car_name": "Maruti Suzuki Ertiga 2024",
+  "city": "Hyderabad",
+  "owner_name":"Jai Taneja",
+  "seats": 7,
+  "bags": 4,
+  "owner_address":"Plot No. 89, Survey No. 15, Kondapur, Near Cyber Towers,Hyderabad",
+  "fuel_type": "CNG",
+  "price_per_hour": 132,
+  "transmisson": "Manual",
+   "photos": [
+  "photos/eritga2.jpeg"],
+  "image_url": "photos/ertiga.jpeg"
+}
+
+  ]
+}

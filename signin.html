@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+     <!-- Navbar -->
+    <header>
+        <div class="nav-bar">
+            <div class="name-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span id="car">Car</span></h2>
+            </div>
+            
+            <div class="items">
+                <a href="index.html">Home</a>
+                <a href="fleet.html">Cars</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact</a>
+               <a id="mybookings" href="mybookings.html">My Bookings</a>
+
+            </div>
+           
+        </div>
+    </header>
+  <!-- Sign-in Form -->
+  <main class="form-section">
+    <div class="form-card">
+      <div class="logo">
+        <i class="fas fa-car"></i>
+        <span>QuickCar</span>
+      </div>
+      <h2>Sign in to your account</h2>
+      <p>New to QuickCar? <a href="register.html">Create an account</a></p>
+
+      <form class="login-form">
+        <label>Email address*</label>
+        <input type="email" placeholder="your@email.com" required>
+
+        <label>Password*</label>
+        <div class="password-wrap">
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="remember-wrap">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember me</label>
+        </div>
+
+        <button type="submit" class="primary-btn">Sign in</button>
+
+        
+
+        
+      </form>
+    </div>
+  </main>
+<script>
+document.querySelector(".login-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const emailInput = document.querySelector('input[type="email"]').value.trim();
+  const passwordInput = document.querySelector('input[type="password"]').value;
+
+  const storedUser = JSON.parse(localStorage.getItem("User"));
+
+  if (!storedUser || storedUser.email !== emailInput || storedUser.password !== passwordInput) {
+    alert("Invalid email or password.");
+    return;
+  }
+
+  // Mark user as logged in
+  localStorage.setItem("LoggedIn", "true");
+
+  // Redirect to home page
+  window.location.href = "index.html";
+});
+</script>
+  </body>
+</html>

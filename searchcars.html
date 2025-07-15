@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchcars.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+     <header>
+        <div class="nav-bar">
+            <div class="name-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span id="car">Car</span></h2>
+            </div>
+            
+            <div class="items">
+                <a href="index.html">Home</a>
+                <a href="fleet.html">Cars</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+               <a id="mybookings" href="mybookings.html">My Bookings</a>
+
+            </div>
+           
+        </div>
+    </header>
+
+    <div class="search-summary">
+    <div class="location">
+        <span>📍 Pick-up Location</span>
+        <strong>New York, NY</strong>
+    </div>
+    <div class="pickup-date">
+        <span>📅 Pick-up Date</span>
+        <strong>Jul 15, 2023 </strong>
+    </div>
+    <div class="return-date">
+        <span>📅 Return Date</span>
+        <strong>Jul 20, 2023 - 10:00 AM</strong>
+    </div>
+    <a class="modify-btn" href="index.html" style="text-decoration: none;">Modify Search</a> 
+</div>
+
+  
+<div class="car-list">
+  <p>Loading Cars..</p>
+</div>
+     <div class="why">
+  <div class="quick">
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="icon-circle">
+        <i class="fas fa-headphones"></i>
+      </div>
+      <h2>24/7 Customer Support</h2>
+      <p>Our dedicated team is always available to assist you with any questions or concerns.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon-circle">
+        <i class="fas fa-bolt"></i>
+      </div>
+      <h2>Quick & Easy Booking</h2>
+      <p>Book your ideal car in minutes with our streamlined reservation process.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="icon-circle">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h2>No Hidden Charges</h2>
+      <p>Transparent pricing with all fees clearly displayed before you confirm your booking.</p>
+    </div>
+  </div>
+</div>
+    <footer>
+  <div class="footer-container">
+    <div class="card1">
+      <div class="card-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span style="color: #36a7f6;">Car</span></h2>
+            </div>
+          <div class="pcar">
+            <p>Premium car rental services with transparent pricing and exceptional customer support.</p>
+          </div>
+          <div class="social-media">
+            <a href="#3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#3"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#3"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""></a>
+            
+           
+           
+            
+          </div>
+        
+
+    </div>
+    <div class="card2">
+      <h2>Quick Links</h2>
+      <div class="anchor-links">
+        <a href="index.html">Home</a>
+      <a href="fleet.html">Cars</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    
+
+      </div>
+      
+
+    </div>
+    <div class="card2">
+      <h2>Support</h2>
+      <div class="anchor-links">
+        <a href="contactus.html">Help Center</a>
+      <a href="termsofservice.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      
+    
+
+      </div>
+      
+
+    </div>
+       <div class="card2">
+      <h2>Contact Info</h2>
+      <div class="anchor-links">
+        <p><i class="fa-solid fa-phone"></i>   +91 7300368554</p>
+      <p><i class="fa-solid fa-message"></i>   support@quickcar.com</p>
+      <p><i class="fa-solid fa-location-dot"> </i>   34 Wifi Street, Banglore, Karnataka </p>
+      <p>530068</p>
+      
+</div>
+      </div>
+    
+  </div>
+  <div class="footer-bottom">
+    <hr class="grey-line">
+    <br>
+    <p>© 2024 QuickCar. All rights reserved.</p>
+  </div>
+</footer>
+<!-- Photo Gallery Modal -->
+<div id="photo-modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close-modal" class="close-btn">&times;</span>
+    <h2>Car Photo Gallery</h2>
+    <div class="photo-gallery"></div>
+  </div>
+</div>
+<script>
+  // Store all cars to access later
+  let allCars = [];
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const carListDiv = document.querySelector(".car-list");
+    const data = JSON.parse(localStorage.getItem("data"));
+    const selectedCity = data?.pickupLocation;
+    const pickupd = data?.pickupDate;
+    const returnd = data?.returnDate;
+    const pickupt = data?.pickupTime;
+    const returnt = data?.returnTime;
+
+    if (!selectedCity) {
+      carListDiv.innerHTML = "<p>No pickup location selected.</p>";
+      return;
+    }
+
+    document.querySelector(".location strong").textContent = selectedCity;
+    document.querySelector(".pickup-date").innerHTML = `<span>📅 Pick-up Date & Time</span><strong>${pickupd}|${pickupt}</strong>`;
+    document.querySelector(".return-date").innerHTML = `<span>📅 Return Date & Time</span><strong>${returnd}|${returnt}</strong>`;
+
+    fetch("cars.json")
+      .then(response => response.json())
+      .then(data => {
+        const cars = data.cars.filter(car =>
+          car.city.toLowerCase() === selectedCity.toLowerCase()
+        );
+
+        allCars = cars;
+        localStorage.setItem("allCars", JSON.stringify(cars)); // Save for later
+
+        if (cars.length === 0) {
+          carListDiv.innerHTML = "<p>No cars available in this city.</p>";
+          return;
+        }
+
+        carListDiv.innerHTML = "";
+
+        cars.forEach(car => {
+          const carCard = document.createElement("div");
+          carCard.className = "car-card";
+
+          carCard.innerHTML = `
+            <img src="${car.image_url}" alt="${car.car_name}">
+            <div class="ho">
+              <h3>${car.car_name}</h3>
+              <span><i class="fa-regular fa-circle-user"></i> ${car.owner_name}</span>
+            </div>
+            <div class="category">${car.transmisson} - ${car.fuel_type}</div>
+            <div class="features">
+              <span>🧑‍🤝‍🧑 ${car.seats} seats</span>
+              <span>🧳 ${car.bags} bags</span>
+              <span>⛽ ${car.fuel_type}</span>
+            </div>
+            <div class="more-photos">
+              <a href="#" class="more-photos-link" data-id="${car.car_name}">More Photos</a>
+            </div>
+            <div class="price-rating">
+              <div class="price">₹${car.price_per_hour}/hour</div>
+              <div class="rating">★ 4.5</div>
+            </div>
+            <button class="book-btn">Book Now</button>
+          `;
+
+          // Book Now functionality
+          const bookBtn = carCard.querySelector(".book-btn");
+          bookBtn.addEventListener("click", () => {
+            localStorage.setItem("selectedCar", JSON.stringify(car));
+            window.location.href = "booking.html";
+          });
+
+          carListDiv.appendChild(carCard);
+        });
+      })
+      .catch(error => {
+        carListDiv.innerHTML = "<p>Failed to load cars.</p>";
+        console.error("Error fetching cars:", error);
+      });
+  });
+
+  // More Photos Modal Handling
+  document.addEventListener("click", function (e) {
+    if (e.target.classList.contains("more-photos-link")) {
+      e.preventDefault();
+
+      const carName = e.target.getAttribute("data-id");
+      const car = allCars.find(c => c.car_name === carName);
+
+      const gallery = document.querySelector(".photo-gallery");
+      gallery.innerHTML = "";
+
+      if (car?.photos && car.photos.length > 0) {
+        car.photos.forEach(photo => {
+          const img = document.createElement("img");
+          img.src = photo;
+          gallery.appendChild(img);
+        });
+
+        document.getElementById("photo-modal").classList.remove("hidden");
+      } else {
+        alert("No additional photos available for this car.");
+      }
+    }
+  });
+
+  // Close modal
+  document.getElementById("close-modal").addEventListener("click", () => {
+    document.getElementById("photo-modal").classList.add("hidden");
+  });
+</script>
+</body>
+</html>

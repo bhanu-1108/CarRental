@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="name-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span id="car">Car</span></h2>
+            </div>
+            
+            <div class="items">
+                <a href="index.html">Home</a>
+                <a href="fleet.html">Cars</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact</a>
+               <a id="mybookings" href="mybookings.html">My Bookings</a>
+
+            </div>
+           
+        </div>
+    </header>
+
+  <div class="container">
+    <div class="step-progress">
+      <div class="step active">
+        <div class="icon"><i class="fas fa-car"></i></div>
+        <p>Select Car</p>
+      </div>
+      <div class="line active-line"></div>
+      <div class="step active">
+        <div class="icon"><i class="fas fa-file-alt"></i></div>
+        <p>Details</p>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+        <div class="icon" id="pay"><i class="fas fa-credit-card"></i></div>
+        <p>Payment</p>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+        <div class="icon"><i class="fas fa-check"></i></div>
+        <p>Confirmation</p>
+      </div>
+    </div>
+
+<div class="payment-section" style="text-align: center; margin-top: 40px;">
+  <h2>Scan to Pay</h2>
+  <img src="photos/WhatsApp Image 2025-07-10 at 21.41.05_b2735195.jpg" alt="QR Code" style="width: 250px; height: 250px; margin: 20px 0;" />
+  <br />
+  <button id="confirm-btn" style="padding: 10px 20px; font-size: 16px;">✅ Confirm Payment</button>
+</div>
+<script>
+  document.getElementById("confirm-btn").addEventListener("click", function () {
+    window.location.href = "confirmation.html";
+    
+  });
+</script>
+</body>
+</html>

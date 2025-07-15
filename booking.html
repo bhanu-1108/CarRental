@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickCar Booking</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+  <header>
+        <div class="nav-bar">
+            <div class="name-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span id="car">Car</span></h2>
+            </div>
+            
+            <div class="items">
+                <a href="index.html">Home</a>
+                <a href="fleet.html">Cars</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+               <a id="mybookings" href="mybookings.html">My Bookings</a>
+
+            </div>
+           
+        </div>
+    </header>
+
+  <div class="container">
+    <div class="step-progress">
+      <div class="step active">
+        <div class="icon"><i class="fas fa-car"></i></div>
+        <p>Select Car</p>
+      </div>
+      <div class="line active-line"></div>
+      <div class="step active">
+        <div class="icon"><i class="fas fa-file-alt"></i></div>
+        <p>Details</p>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+        <div class="icon"><i class="fas fa-credit-card"></i></div>
+        <p>Payment</p>
+      </div>
+      <div class="line"></div>
+      <div class="step">
+        <div class="icon"><i class="fas fa-check"></i></div>
+        <p>Confirmation</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <div class="section">
+          <h3>Pick-up and Drop-off</h3>
+          <div class="pickup-dropoff-container">
+            <div class="location">
+              <div class="locationpickup">
+                 <p><i class="fas fa-location-dot"></i> <span class="label">Pick-up Location :</span>
+                <strong id="pickup-location">Loading...</strong>
+              </p>
+
+              </div>
+             
+              <p><i class="fas fa-calendar-alt"></i> <span class="label">Pick-up Date & Time :</span>
+                <strong id="pickup-datetime">Loading...</strong>
+              </p>
+            </div>
+            <div class="location">
+              <p><i class="fas fa-location-dot"></i> <span class="label">Drop-off Location: </span>
+                <strong id="dropoff-location">Same as pick-up</strong>
+              </p>
+              <p><i class="fas fa-calendar-alt"></i> <span class="label">Drop-off Date & Time: </span>
+                <strong id="dropoff-datetime">Loading...</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Your Selected Car</h3>
+          <div class="selected-car-card">
+            <div class="car-img">
+              <img src="Audi_Q5_FY_50_TFSI_e_Facelift_IMG_5931.jpg" alt="Audi Q5">
+            </div>
+            <div class="car-info">
+              <h2>Audi Q5 <small>or similar</small></h2>
+              <span class="car-type-tag">SUV</span>
+              <div class="features">
+                <span><i class="fas fa-user-friends"></i> 5 Seats</span>
+                <span><i class="fas fa-suitcase-rolling"></i> 3 Large Bags</span>
+                <span><i class="fas fa-cogs"></i> Automatic</span>
+                <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                <span><i class="fas fa-snowflake"></i> A/C</span>
+              </div>
+              <div class="change-car">
+ <!-- <button class="change-btn"><i class="fas fa-sync-alt"></i> Change Car</button>-->
+</div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="price-summary">
+          <h3>Price Summary</h3>
+          <p>Car Rental (5 days) <span id="car-price">$245.00</span></p>
+          <p>Taxes & Fees <span>200 </span></p>
+          <p id="pfull"><span id="span-full"></span></p>
+          <hr />
+          <p class="total">Total <span id="total-price">$352.00</span></p>
+          <button class="pay-btn" type="button">💳 Proceed to Payment</button>
+          <p class="terms">
+            By clicking this button, you agree to our
+            <a href="termsofservice.html">Terms & Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wrapped Bottom Section -->
+    <div class="bottom-section">
+      <div class="driver-details">
+        <h3>Driver Details</h3>
+        <form class="driver-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" placeholder="Enter first name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" placeholder="Enter last name" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="Enter email address" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" placeholder="Enter phone number" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="age">Age *</label>
+              <input type="number" id="age" placeholder="Enter age" required />
+            </div>
+            <div class="form-group">
+              <label for="license">Driver's License Number *</label>
+              <input type="text" id="license" placeholder="Enter driver's license number" required />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="additional-options">
+        <h3>Additional Options</h3>
+
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="option-info">
+            <strong>Full Coverage Insurance</strong>
+            <p>Complete protection with ₹0 deductible</p>
+          </div>
+          <div class="option-meta">
+            <span>₹300/day</span>
+            <input type="checkbox" id="full">
+          </div>
+        </div>
+
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-baby-carriage"></i>
+          </div>
+          <div class="option-info">
+            <strong>Child Seat</strong>
+            <p>Safe and comfortable for children</p>
+          </div>
+          <div class="option-meta">
+            <span>₹400/day</span>
+             <input type="checkbox" id="child">
+           
+          </div>
+        </div>
+
+        <div class="option-card">
+          <div class="option-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="option-info">
+            <strong>GPS Navigation</strong>
+            <p>Premium GPS with real-time traffic updates</p>
+          </div>
+          <div class="option-meta">
+            <span>₹450/day</span>
+            <input type="checkbox" id="gps">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- END container -->
+
+<footer>
+  <div class="footer-container">
+    <div class="card1">
+      <div class="card-logo">
+                <i class="fa-solid fa-car-side"></i>
+                <h2>Quick<span style="color: #36a7f6;">Car</span></h2>
+            </div>
+          <div class="pcar">
+            <p>Premium car rental services with transparent pricing and exceptional customer support.</p>
+          </div>
+          <div class="social-media">
+            <a href="#3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#3"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#3"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#3"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""></a>
+            
+           
+           
+            
+          </div>
+        
+
+    </div>
+    <div class="card2">
+      <h2>Quick Links</h2>
+      <div class="anchor-links">
+        <a href="index.html">Home</a>
+      <a href="fleet.html">Cars</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      
+
+      </div>
+      
+
+    </div>
+    <div class="card2">
+      <h2>Support</h2>
+      <div class="anchor-links">
+        <a href="contactus.html">Help Center</a>
+      <a href="termsofservice.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    
+      
+    
+
+      </div>
+      
+
+    </div>
+       <div class="card2">
+      <h2>Contact Info</h2>
+      <div class="anchor-links">
+        <p><i class="fa-solid fa-phone"></i>   +91 7300368554</p>
+      <p><i class="fa-solid fa-message"></i>   support@quickcar.com</p>
+      <p><i class="fa-solid fa-location-dot"> </i>   34 Wifi Street, Banglore, Karnataka </p>
+      <p>530068</p>
+      
+</div>
+      </div>
+    
+  </div>
+
+  <div class="footer-bottom">
+    <hr class="grey-line">
+    <br>
+    <p>© 2024 QuickCar. All rights reserved.</p>
+  </div>
+</footer>
+<script src="booking.js">
+  
+</script>
+
+</body>
+</html>

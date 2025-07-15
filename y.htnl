@@ -1,0 +1,135 @@
+<div class="car-card">
+
+    <img src="Toyota_Corolla_Hybrid_(E210)_IMG_4338.jpg" alt="Toyota Corolla">
+    <h3>Toyota Corolla</h3>
+    <p class="category">Economy</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>🔋 Hybrid</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$45 <span>/day</span></div>
+      <div class="rating">⭐ 4.8 <small>(124)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+
+  <div class="car-card">
+    <img src="20190528111320_DSC_4375.avif" alt="Honda Civic">
+    <h3>Honda Civic</h3>
+    <p class="category">Compact</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$48 <span>/day</span></div>
+      <div class="rating">⭐ 4.7 <small>(98)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+   <div class="car-card">
+    <img src="20190528111320_DSC_4375.avif" alt="Honda Civic">
+    <h3>Honda Civic</h3>
+    <p class="category">Compact</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$48 <span>/day</span></div>
+      <div class="rating">⭐ 4.7 <small>(98)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+   <div class="car-card">
+    <img src="20190528111320_DSC_4375.avif" alt="Honda Civic">
+    <h3>Honda Civic</h3>
+    <p class="category">Compact</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$48 <span>/day</span></div>
+      <div class="rating">⭐ 4.7 <small>(98)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+   <div class="car-card">
+    <img src="20190528111320_DSC_4375.avif" alt="Honda Civic">
+    <h3>Honda Civic</h3>
+    <p class="category">Compact</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$48 <span>/day</span></div>
+      <div class="rating">⭐ 4.7 <small>(98)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+ <div class="car-card">
+    <img src="20190528111320_DSC_4375.avif" alt="Honda Civic">
+    <h3>Honda Civic</h3>
+    <p class="category">Compact</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$48 <span>/day</span></div>
+      <div class="rating">⭐ 4.7 <small>(98)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+ <div class="car-card">
+    <img src="20190528111320_DSC_4375.avif" alt="Honda Civic">
+    <h3>Honda Civic</h3>
+    <p class="category">Compact</p>
+    <div class="features">
+      <span>🚗 5 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$48 <span>/day</span></div>
+      <div class="rating">⭐ 4.7 <small>(98)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
+
+
+
+
+  <div class="car-card">
+    <div class="tag premium">Premium</div>
+    <img src="Ford_Mustang_2025_101A_PYZ_882_89W_13A_CON_64F_99H_44U_EBST_DEFAULT_EXT_4.avif" alt="Ford Mustang">
+    <h3>Ford Mustang</h3>
+    <p class="category">Sports</p>
+    <div class="features">
+      <span>🚗 4 Seats</span>
+      <span>🧳 2 Bags</span>
+      <span>⛽ Petrol</span>
+      <span>⚙️ Automatic</span>
+    </div>
+    <div class="price-rating">
+      <div class="price">$89 <span>/day</span></div>
+      <div class="rating">⭐ 4.9 <small>(76)</small></div>
+    </div>
+    <button class="book-btn">Book Now</button>
+  </div>
