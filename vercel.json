@@ -1,7 +1,7 @@
 {
   "rewrites": [
     { "source": "/aboutus", "destination": "/aboutus.html" },
-    { "source": "/main", "destination": "/index.html" },
+    { "source": "/index", "destination": "/index.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
     { "source": "/payment", "destination": "/payment.html" },
     { "source": "/booking", "destination": "/booking.html" },
