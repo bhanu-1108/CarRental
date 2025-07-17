@@ -55,7 +55,7 @@ body {
 
 .hero {
   width: 100vw;
-  background-image: url(photos/istockphoto-1167991014-612x612.jpg);
+  background-image: url(/photos/istockphoto-1167991014-612x612.jpg);
   height: 500px;
   object-fit: cover;
 }

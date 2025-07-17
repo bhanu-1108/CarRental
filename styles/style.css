@@ -133,7 +133,7 @@ body {
 .hero {
     position: relative;
     height: 500px;
-    background-image: url('photos/hero.jpg');
+    background-image: url('/photos/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
