@@ -1,18 +1,18 @@
 {
   "rewrites": [
-     { "source": "/", "destination": "/index.html" },
-    { "source": "/aboutus", "destination": "/aboutus.html" },
-    { "source": "/index", "destination": "/index.html" },
-    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
-    { "source": "/payment", "destination": "/payment.html" },
-    { "source": "/booking", "destination": "/booking.html" },
-    { "source": "/mybookings", "destination": "/mybookings.html" },
-    { "source": "/searchcars", "destination": "/searchcars.html" },
-    { "source": "/contactus", "destination": "/contactus.html" },
-    { "source": "/signin", "destination": "/signin.html" },
-    { "source": "/register", "destination": "/register.html" },
-    { "source": "/fleet", "destination": "/fleet.html" },
-     { "source": "/termsofservice", "destination": "/termsofservice.html" },
-     { "source": "/confirmation", "destination": "/confirmation.html" }
+     { "source": "/", "destination": "/pages/index.html" },
+    { "source": "/aboutus", "destination": "/pages/aboutus.html" },
+    { "source": "/index", "destination": "/pages/index.html" },
+    { "source": "/privacy-policy", "destination": "/pages/privacy-policy.html" },
+    { "source": "/payment", "destination": "/pages/payment.html" },
+    { "source": "/booking", "destination": "/pages/booking.html" },
+    { "source": "/mybookings", "destination": "/pages/mybookings.html" },
+    { "source": "/searchcars", "destination": "/pages/searchcars.html" },
+    { "source": "/contactus", "destination": "/pages/contactus.html" },
+    { "source": "/signin", "destination": "/pages/signin.html" },
+    { "source": "/register", "destination": "/pages/register.html" },
+    { "source": "/fleet", "destination": "/pages/fleet.html" },
+     { "source": "/termsofservice", "destination": "/pages/termsofservice.html" },
+     { "source": "/confirmation", "destination": "/pages/confirmation.html" }
   ]
 }
