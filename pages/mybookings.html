@@ -469,11 +469,11 @@ if (user && user.username && isLoggedIn) {
 
 if (!isLoggedIn) {
   bookingDiv.innerHTML = `
-    <p class="no-booking">❌ You are not logged in. <a href="signin.html" class="back-home">Sign In</a></p>
+    <p class="no-booking">❌ You are not logged in. <a href="/signin" class="back-home">Sign In</a></p>
   `;
 } else if (!bookingInfo) {
   bookingDiv.innerHTML = `
-    <p class="no-booking">❌ No booking data found. <a href="index.html" class="back-home">Back to Home</a></p>
+    <p class="no-booking">❌ No booking data found. <a href="/index" class="back-home">Back to Home</a></p>
   `;
 } else {
   // fetch cars.json to get owner data
