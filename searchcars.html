@@ -226,7 +226,7 @@
           const bookBtn = carCard.querySelector(".book-btn");
           bookBtn.addEventListener("click", () => {
             localStorage.setItem("selectedCar", JSON.stringify(car));
-            window.location.href = "booking.html";
+            window.location.href = "/booking";
           });
 
           carListDiv.appendChild(carCard);
