@@ -14,20 +14,15 @@
                 <i class="fa-solid fa-car-side"></i>
                <h2>Quick<span id="car">Car</span></h2>
             </div>
-            
+             <div class="hamburger">&#9776;</div> <!-- ☰ icon -->
             <div class="items">
                 <a href="index.html">Home</a>
                 <a href="fleet.html">Cars</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
                <a id="mybookings" href="mybookings.html">My Bookings</a>
-
-            </div>
-            <div class="signin" id="user-info">
-              <a id="a1" href="signin.html">Sign In</a>
-                <a href="register.html" id="reg">Register</a>
-                
-            </div>
+               </div>
+           
         </div>
     </header>
     <div class="container">
@@ -111,7 +106,7 @@
   <div class="footer-bottom">
     <hr class="grey-line">
     <br>
-    <p>© 2024 QuickCar. All rights reserved.</p>
+    <p>© 2025 QuickCar. All rights reserved.</p>
   </div>
 </footer>
 <script>
@@ -140,6 +135,12 @@
   .catch(error => {
     console.error("Failed to load cars:", error);
   });
+  const hamburger = document.querySelector(".hamburger");
+  const items = document.querySelector(".items");
+
+  hamburger.addEventListener("click", () => {
+    items.classList.toggle("active");
+  }); 
 
 </script>
 </body>

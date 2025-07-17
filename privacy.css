@@ -12,16 +12,14 @@ body {
   z-index: 1000;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-
-.nav-bar {
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     padding: 10px;
 }
+
+
 
 .name-logo {
     display: flex;
@@ -64,7 +62,7 @@ body {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 200px;
+        width: 250px;
         border: 1px solid #ccc;
         border-radius: 5px;
     }

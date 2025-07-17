@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="searchcars.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Document</title>
 
@@ -15,13 +16,14 @@
                 <i class="fa-solid fa-car-side"></i>
                 <h2>Quick<span id="car">Car</span></h2>
             </div>
-            
+             <div class="hamburger">&#9776;</div> <!-- ☰ icon -->
             <div class="items">
                 <a href="index.html">Home</a>
                 <a href="fleet.html">Cars</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
                <a id="mybookings" href="mybookings.html">My Bookings</a>
+               
 
             </div>
            
@@ -161,11 +163,11 @@
   document.addEventListener("DOMContentLoaded", function () {
     const carListDiv = document.querySelector(".car-list");
     const data = JSON.parse(localStorage.getItem("data"));
-    const selectedCity = data?.pickupLocation;
-    const pickupd = data?.pickupDate;
-    const returnd = data?.returnDate;
-    const pickupt = data?.pickupTime;
-    const returnt = data?.returnTime;
+    const selectedCity = data.pickupLocation;
+    const pickupd = data.pickupDate;
+    const returnd = data.returnDate;
+    const pickupt = data.pickupTime;
+    const returnt = data.ret
 
     if (!selectedCity) {
       carListDiv.innerHTML = "<p>No pickup location selected.</p>";
@@ -177,8 +179,8 @@
     document.querySelector(".return-date").innerHTML = `<span>📅 Return Date & Time</span><strong>${returnd}|${returnt}</strong>`;
 
     fetch("cars.json")
-      .then(response => response.json())
-      .then(data => {
+      .then(response => response.json()) 
+      .then(data => { // data ab cars.json
         const cars = data.cars.filter(car =>
           car.city.toLowerCase() === selectedCity.toLowerCase()
         );
@@ -246,7 +248,7 @@
       const gallery = document.querySelector(".photo-gallery");
       gallery.innerHTML = "";
 
-      if (car?.photos && car.photos.length > 0) {
+      if (car.photos && car.photos.length > 0) {
         car.photos.forEach(photo => {
           const img = document.createElement("img");
           img.src = photo;
@@ -263,6 +265,12 @@
   // Close modal
   document.getElementById("close-modal").addEventListener("click", () => {
     document.getElementById("photo-modal").classList.add("hidden");
+  });
+   const hamburger = document.querySelector(".hamburger");
+  const items = document.querySelector(".items");
+
+  hamburger.addEventListener("click", () => {
+    items.classList.toggle("active");
   });
 </script>
 </body>

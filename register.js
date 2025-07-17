@@ -15,7 +15,6 @@ btn.addEventListener("click",()=>{
 
   // Validations
   if (!username || !email || !phone || !password) {
-    error.textContent
     error.textContent = "All fields are required.";
     return;
   }
@@ -52,4 +51,11 @@ alert("Registration Done Sucessfully")
 window.location.href = "signin.html"; // Redirect to main page
 
 })
+const hamburger = document.querySelector(".hamburger");
+  const items = document.querySelector(".items");
+
+  hamburger.addEventListener("click", () => {
+    items.classList.toggle("active");
+  });
+  
  

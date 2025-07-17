@@ -10,6 +10,7 @@
       "owner_name":"Jai Taneja",
       "owner_address":"Flat No. 204,Sunrise Apartments,Jagatpura,Jaipur,302017",
       "transmisson": "Manual",
+      "host_phone_number":"+91 9123456789",
       "photos": [
   "photos/thar1.jpeg",
   "photos/thar2.jpeg",
@@ -27,6 +28,7 @@
   "fuel_type": "Petrol",
   "price_per_hour": 94,
   "transmisson": "Manual",
+  "host_phone_number":"+91 9876543210",
   "photos": [
   "photos/swift2.jpg",
   "photos/swift3.jpg",
@@ -42,6 +44,7 @@
   "owner_name":"Happy Singh",
   "fuel_type": "Petrol",
   "price_per_hour": 102,
+  "host_phone_number":"+91 8657524242",
   "transmisson": "Manual",
   "photos": [
   "photos/fronx1.jpeg",
@@ -58,7 +61,8 @@
   "owner_address":"H.No. 19, Gopalpura Bypass,Tonk Road,Jaipur,302018",
   "owner_name":"Rajesh Sain",
   "fuel_type": "Diesel",
-  "price_per_hour": 341,
+  "price_per_hour": 323,
+  "host_phone_number":"+91 9343412121",
 "transmisson": "Manual",
 "photos": [
   "photos/scorpio2.jpg",
@@ -82,6 +86,7 @@
   "photos/carens2.jpeg",
   "photos/carens3.jpeg",
 "photos/carens6.jpeg"],
+"host_phone_number":"+91 8898866776",
   "image_url": "photos/carens.jpeg"
 },
 {
@@ -94,15 +99,19 @@
   "fuel_type": "Petrol",
   "price_per_hour": 58,
 "transmisson": "Manual",
+"host_phone_number":7300369553,
+
 "photos": [
   "photos/celerio2.jpeg",
   "photos/celerio2.jpeg",
+  
   "photos/celerio3.jpg"],
   "image_url": "photos/celerio.jpeg"
 },
 {
   "car_name": "Hyundai I20 2023",
   "city": "Jaipur",
+  "host_phone_number":"+91 9876543210",
   "seats": 5,
   "bags": 2,
   "owner_address":"Shop No. 5, Johari Bazaar,Jaipur,302003",
@@ -122,6 +131,7 @@
   "car_name": "Mahindra Bolero Neo 2022",
   "city": "Jaipur",
   "seats": 7,
+  "host_phone_number":"+91 7999912345",
   "bags": 4,
   "owner_address":"32/84, Patel Marg, Mansarovar,Jaipur,302020",
   "owner_name":"Govind Sahu",
@@ -140,6 +150,7 @@
       "city": "Udaipur",
       "seats": 5,
       "bags": 3,
+      "host_phone_number":"+91 8657524242",
       "owner_name":"Gaurav Kapoor",
       "fuel_type": "Diesel",
       "owner_address":"",
@@ -157,7 +168,7 @@
       "city": "Udaipur",
       "seats": 5,
       "bags": 3,
-      
+      "host_phone_number":"+91 9343412121",
       "owner_name":"Roy Sarkar",
       "fuel_type": "Petrol",
       "price_per_hour": 110,
@@ -176,6 +187,7 @@
       "owner_name":"Harsh Teja",
       "seats": 5,
       "bags": 2,
+      "host_phone_number":"+91 8898866776",
       "owner_address":"House No.101,Shobhagpura Road,Udaipur,313002",
       "fuel_type": "CNG",
       "price_per_hour": 312,
@@ -193,6 +205,7 @@
       "owner_name":"Shubham Sharma",
       "seats": 5,
       "bags": 2,
+      "host_phone_number":"+91 7999912345",
       "owner_address":"Shop No. 5, Ground Floor,Shiva Plaza,Juhu Tara Road,Mumbai,400049",
       "fuel_type": "Petrol",
       "price_per_hour": 77,
@@ -209,6 +222,7 @@
       "car_name": "Kia Seltos",
       "city": "Mumbai",
       "owner_name":"Ram Verma",
+      "host_phone_number":"+91 86575 24242",
       "seats": 7,
       "bags": 3,
       "owner_address":"Plot No. 55, CES Road,Near Shivaji Park,DadarWest,Mumbai,400028",
@@ -228,6 +242,7 @@
       "owner_name":"Shekar Kumawat",
       "seats": 5,
       "bags": 2,
+      "host_phone_number":"+91 91234 56789",
       "owner_address":"House No. 45,Scheme No. 54,Indore,452001",
       "fuel_type": "Petrol",
       "price_per_hour": 312,
@@ -246,6 +261,7 @@
   "city": "Hyderabad",
   "owner_name":"Jai Taneja",
   "seats": 7,
+  "host_phone_number":"+91 9876543210",
   "bags": 4,
   "owner_address":"Plot No. 89, Survey No. 15, Kondapur, Near Cyber Towers,Hyderabad",
   "fuel_type": "CNG",

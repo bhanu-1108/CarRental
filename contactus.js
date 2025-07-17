@@ -67,6 +67,12 @@ questions.forEach((question) => {
 });
 
 });
+ const hamburger = document.querySelector(".hamburger");
+  const items = document.querySelector(".items");
+
+  hamburger.addEventListener("click", () => {
+    items.classList.toggle("active");
+  });
 
 
 

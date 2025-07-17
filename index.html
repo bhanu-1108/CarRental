@@ -14,23 +14,21 @@
                 <i class="fa-solid fa-car-side"></i>
                 <h2>Quick<span id="car">Car</span></h2>
             </div>
-              <div class="hamburger" onclick="toggleMenu()">
-            <i class="fa fa-bars"></i>
-        </div>
-            
+            <div class="hamburger">&#9776;</div> <!-- ☰ icon --> 
             <div class="items">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="fleet.html">Cars</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
                <a id="mybookings" href="mybookings.html">My Bookings</a>
-
-            </div>
-            <div class="signin" id="user-info">
+               <div class="signin" id="user-info">
               <a id="a1" href="signin.html">Sign In</a>
                 <a href="register.html" id="reg">Register</a>
                 
             </div>
+
+            </div>
+            
         </div>
     </header>
 
@@ -271,7 +269,7 @@
      <div class="footer-bottom">
     <hr class="grey-line">
     <br>
-  <p>© 2024 QuickCar. All rights reserved.</p>
+  <p>© 2025 QuickCar. All rights reserved.</p>
   </div>
 </footer>
 <script>
@@ -293,6 +291,7 @@ if (user && user.username && isLoggedIn) {
   document.getElementById("logout").addEventListener("click", function () {
     localStorage.removeItem("LoggedIn");
     location.reload();
+
   });
 }
 
@@ -321,6 +320,15 @@ if (user && user.username && isLoggedIn) {
   }
 
   // Check if return date is earlier than pickup date
+   const today = new Date();
+  today.setHours(0, 0, 0, 0); // Remove time for comparison
+  const selectedPickupDate = new Date(pickupDate);
+  selectedPickupDate.setHours(0, 0, 0, 0);
+  if (selectedPickupDate < today) {
+    alert("Pick-up date cannot be in the past.");
+    return;
+  }
+
   if (new Date(returnDate) < new Date(pickupDate)) {
     alert("Return date cannot be earlier than pickup date.");
     return;
@@ -341,11 +349,12 @@ if (user && user.username && isLoggedIn) {
   }
 });
 // hamburger menu 
-function toggleMenu() {
-    var nav = document.getElementById("nav-items");
-    nav.classList.toggle("active");
-}
+const hamburger = document.querySelector(".hamburger");
+  const items = document.querySelector(".items");
 
+  hamburger.addEventListener("click", () => {
+    items.classList.toggle("active");
+  });
 </script>
 </body>
 </html>

@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <button class="pay-btn">💳 Proceed to Payment</button>
         <p class="terms">
           By clicking this button, you agree to our
-          <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+          <a href="termsofservice.html">Terms & Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>.
         </p>
       `;
 
@@ -129,4 +129,13 @@ document.addEventListener("DOMContentLoaded", function () {
     if (initialPayButton) {
       initialPayButton.addEventListener("click", handlePaymentClick);
     }
+   
 });
+ const hamburger = document.querySelector('.hamburger');
+  const navItems = document.getElementById('nav-items');
+
+  hamburger.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+  });
+
+ 

@@ -16,9 +16,7 @@
         <i class="fa-solid fa-car-side"></i>
         <h2>Quick<span id="car">Car</span></h2>
       </div>
-      <div class="hamburger" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
-      </div>
+      <div class="hamburger">&#9776;</div> <!-- ☰ icon -->
       <div class="items" id="nav-items">
         <a href="index.html">Home</a>
         <a href="fleet.html">Cars</a>
@@ -108,7 +106,7 @@
     <div class="footer-bottom">
       <hr class="grey-line">
       <br>
-      <p>© 2024 QuickCar. All rights reserved.</p>
+      <p>© 2025 QuickCar. All rights reserved.</p>
     </div>
   </footer>
 
@@ -118,4 +116,12 @@
     }
   </script>
 </body>
+<script>
+   const hamburger = document.querySelector(".hamburger");
+  const items = document.querySelector(".items");
+
+  hamburger.addEventListener("click", () => {
+    items.classList.toggle("active");
+  });
+</script>
 </html>
