@@ -13,13 +13,13 @@ A responsive multi-page **car rental website** built using **HTML, CSS, and Java
 
 ## 📸 Screenshots
 
-photos/homepage
-photos/contactus
-photos/register
-photos/fleet
-photos/booking
-photos/confirm
-photos/mybookings
+photos/homepage.png
+photos/contactus.png
+photos/register.png
+photos/fleet.png
+photos/booking.png
+photos/confirm.png
+photos/mybookings.png
 ---
 
 ## 💡 Features
