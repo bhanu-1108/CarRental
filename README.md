@@ -7,7 +7,7 @@ A responsive multi-page **car rental website** built using **HTML, CSS, and Java
 ## 📺 Live Demo
 
 🌐 [Live Site on Vercel](https://car-rental-bhanu-sarans-projects.vercel.app) 
-📁 [GitHub Repository](https://github.com/your-username/car-rental-frontend)
+📁 [GitHub Repository](https://github.com/bhanu-1108/CarRental)
 
 ---
 
