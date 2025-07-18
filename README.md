@@ -1,52 +1,54 @@
-# 🚗 QuickCar – Car Rental Frontend Website
+# 🚗 Car Rental – Car Rental Frontend Website
 
-A fully responsive multi-page car rental website built with **HTML, CSS, and JavaScript**. This project simulates the frontend of an online car rental service with pages like Home, Sign In, Register, and Search Cars.
-
----
-
-## 🌐 Live Demo
-
-🔗 [Click here to view the live site](https://your-vercel-link.vercel.app)
+A responsive multi-page **car rental website** built using **HTML, CSS, and JavaScript (Vanilla JS with DOM manipulation)**. This project simulates the frontend of a real-world car rental service with essential pages and dynamic interactions — all managed on the client side using **Local Storage**.
 
 ---
 
-## 🛠️ Technologies Used
+## 📺 Live Demo
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Font Awesome (for icons)
-- LocalStorage (for login/register simulation)
-- Responsive Design with Flexbox & Media Queries
+🌐 [Live Site on Vercel](https://car-rental-bhanu-sarans-projects.vercel.app) 
+📁 [GitHub Repository](https://github.com/your-username/car-rental-frontend)
 
 ---
 
-## 📁 Pages Included
+## 📸 Screenshots
 
-- `index.html` – Homepage
-- `signin.html` – Login page
-- `register.html` – Sign-up page
-- `searchcars.html` – Search results (simulated)
-- `mybookings.html` – Booking history (if added)
+photos/homepage
+photos/contactus
+photos/register
+photos/fleet
+photos/booking
+photos/confirm
+photos/mybookings
+---
+
+## 💡 Features
+
+- ✅ Responsive design for desktop and mobile
+- ✅ Multi-page site: Home, Sign In, Register, Search Cars, Book Now, My Bookings
+- ✅ Booking flow using Local Storage
+- ✅ Dynamic DOM manipulation with Vanilla JS
+- ✅ QR Code Payment simulation
+- ✅ Persistent user sessions (login simulation via Local Storage)
+- ✅ Clean and modern UI
 
 ---
 
-## 📦 Features
+## 🛠 Technologies Used
 
-✅ Responsive design (mobile-friendly)  
-✅ LocalStorage-based user login/register  
-✅ Car search form with validation  
-✅ Animated hamburger menu for navigation  
-✅ Clean UI with reusable components  
-✅ Ready to integrate with backend or APIs
+| Technology      | Purpose                              |
+|------------------|--------------------------------------|
+| **HTML5**         | Structure of web pages               |
+| **CSS3**          | Styling and layout                   |
+| **JavaScript**    | Client-side interactivity            |
+| **Vanilla DOM**   | Manual DOM manipulation (no libraries) |
+| **Local Storage** | Store user, booking, and car data   |
+| **Vercel**        | Hosting and deployment               |
 
 ---
 
-## 🚀 How to Run Locally
 
-```bash
-# Clone the repository
-git clone https://github.com/bhanu-1108/CarRental.git
 
-# Open index.html in browser
-cd your-repo-name
+
+
+
